@@ -2,7 +2,7 @@
 Name=Dwarf Fortress Legacy
 GenericName=Dwarf Fortress Legacy
 Comment=A single-player fantasy game.
-Exec=dwarfort
+Exec=Dwarf_Fortress
 Icon=dwarffortress
 StartupWMClass=dwarfort
 Terminal=false
