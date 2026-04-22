@@ -7,7 +7,7 @@ cp "$APPDIR"/sharun    ./
 cp "$APPDIR"/.env      ./ 2>/dev/null || :
 cp "$APPDIR"/.preload  ./ 2>/dev/null || :
 
-ln -f ./sharun ./bin/dwarfort
+ln -f ./sharun ./bin/Dwarf_Fortress
 
 if [ ! -d ./bin/data ]; then
 	cp -r "$APPDIR"/bin/data ./bin
