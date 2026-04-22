@@ -6,21 +6,17 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-# pacman -Syu --noconfirm PACKAGESHERE
+pacman -Syu --noconfirm glu sdl12-compat sdl_image sdl_ttf
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano gtk2-mini libdecor-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package PACKAGENAME
+echo "Getting app..."
+echo "---------------------------------------------------------------"
+wget https://bay12games.com/dwarves/df_47_05_linux.tar.bz2
+tar -xvf df_47_05_linux.tar.bz2
+rm -rf *.tar.bz2 df_linux/g_src df_linux/*.txt df_linux/README.linux df_linux/sdl
 
-# If the application needs to be manually built that has to be done down here
-
-# if you also have to make nightly releases check for DEVEL_RELEASE = 1
-#
-# if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
-# else
-# 	regular build steps
-# fi
+mkdir -p ./AppDir/bin
+mv -v df_linux/* ./AppDir/bin
