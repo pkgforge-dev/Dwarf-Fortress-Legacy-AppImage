@@ -11,6 +11,7 @@ pacman -Syu --noconfirm \
     glu          \
     libdecor     \
     libffi       \
+    pcre2        \
     sdl12-compat \
     sdl2_ttf     \
     sdl_image
