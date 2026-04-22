@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Dwarf Fortress Legacy
+GenericName=Dwarf Fortress Legacy
+Comment=A single-player fantasy game.
+Exec=Dwarf_Fortress
+Icon=dwarffortress
+StartupWMClass=dwarfort
+Terminal=false
+Type=Application
+Categories=Game;Strategy;
