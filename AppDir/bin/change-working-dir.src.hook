@@ -10,7 +10,8 @@ cp "$APPDIR"/.preload  ./ 2>/dev/null || :
 ln -f ./sharun ./bin/Dwarf_Fortress
 
 if [ ! -d ./bin/data ]; then
-	cp -r "$APPDIR"/bin/data "$APPDIR"/bin/raw ./bin
+	cp -r "$APPDIR"/bin/data ./bin
+	cp -r "$APPDIR"/bin/raw ./bin
 fi
 
 for d in lib share shared etc; do
