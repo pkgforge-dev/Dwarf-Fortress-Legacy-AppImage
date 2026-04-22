@@ -7,10 +7,13 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+    glib2        \
     glu          \
     libdecor     \
+    libffi       \
     sdl12-compat \
-    sdl2_ttf
+    sdl2_ttf     \
+    sdl_image
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
