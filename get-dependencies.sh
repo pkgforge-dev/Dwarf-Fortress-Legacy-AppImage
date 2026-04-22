@@ -9,7 +9,6 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     glu          \
     libdecor     \
-    pcre2        \
     sdl12-compat \
     sdl_image    \
     sdl_ttf
