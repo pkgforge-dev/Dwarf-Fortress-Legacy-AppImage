@@ -12,7 +12,7 @@ export ICON=PATH_OR_URL_TO_ICON
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /PATH/TO/BINARY_AND_LIBRARIES_HERE
+quick-sharun ./AppDir/bin/*
 
 # Additional changes can be done in between here
 
