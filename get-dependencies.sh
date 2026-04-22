@@ -13,8 +13,9 @@ pacman -Syu --noconfirm \
     libffi       \
     pcre2        \
     sdl12-compat \
-    sdl2_ttf     \
-    sdl_image
+    sdl_image    \
+    sdl_ttf
+
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
