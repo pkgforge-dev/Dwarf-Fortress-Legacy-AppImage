@@ -13,7 +13,6 @@ pacman -Syu --noconfirm \
     sdl_image    \
     sdl_ttf
 
-
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano gtk2-mini
