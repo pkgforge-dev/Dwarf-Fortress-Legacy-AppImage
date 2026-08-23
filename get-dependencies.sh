@@ -8,14 +8,13 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     glu          \
-    libdecor     \
     sdl12-compat \
     sdl_image    \
     sdl_ttf
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano gtk2-mini
+get-debloated-pkgs --add-common --prefer-nano gtk2-mini libdecor-mini
 
 echo "Getting app..."
 echo "---------------------------------------------------------------"
