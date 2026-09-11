@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    glu          \
-    sdl12-compat \
-    sdl_image    \
-    sdl_ttf
+pacman -Syu --noconfirm glu sdl12-compat sdl_image sdl_ttf
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
